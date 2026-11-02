@@ -51,7 +51,6 @@ main {
 
 .hero h1 {
   margin-top: 0;
-  font-size: 1.7rem;
   line-height: 1.2;
 }
 
@@ -166,10 +165,6 @@ main {
 }
 
 @media (min-width: 430px) {
-  .hero h1 {
-    font-size: 1.9rem;
-  }
-
   .order-form__actions {
     flex-direction: row;
   }
@@ -253,10 +248,6 @@ main {
 
   .hero {
     padding: 72px var(--space-xl);
-  }
-
-  .hero h1 {
-    font-size: 2.6rem;
   }
 
   .advantages-list {
