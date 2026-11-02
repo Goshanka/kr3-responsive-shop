@@ -149,7 +149,8 @@ GitHub Pages: https://goshanka.github.io/kr1-html-css-shop/
 
 - `css/style.css` — базовые стили;
 - `css/responsive.css` — адаптивные стили (подключается после `style.css`);
-- `js/main.js` — модальное окно и валидация (из КР №1, не менялся);
+- `js/main.js` — модальное окно и валидация (из КР №1, не менялся, подключён на главной);
+- `js/theme.js` — переключатель тёмной темы (подключён на всех страницах);
 - `images/` — изображения (`sofa-N.jpg` 640px, `sofa-N-480.jpg`, `sofa-N-320.jpg`);
 - `lighthouse/` — отчёт Lighthouse (Accessibility).
 
@@ -174,3 +175,17 @@ GitHub Pages: https://goshanka.github.io/kr1-html-css-shop/
 
 Проверяются `index.html`, `catalog.html`, `order.html`, категория Accessibility.
 Отчёты сохранены в папке `lighthouse/` (`accessibility-index.html`, `accessibility-catalog.html`, `accessibility-order.html`): Accessibility — 100/100 на всех трёх страницах.
+
+### Дополнительно
+
+- мобильное меню-«бургер» без JavaScript (скрытый чекбокс и `label`, класс `:checked`), доступно с клавиатуры;
+- тёмная тема: автоматически по `prefers-color-scheme` и кнопка-переключатель (выбор хранится в `localStorage`);
+- SVG-фавикон и `og:image`.
+
+### Проверенные ширины
+
+360px, 430px, 768px, 1024px, 1440px.
+
+### Ссылка на опубликованную версию
+
+https://goshanka.github.io/kr3-responsive-shop/ (репозиторий: https://github.com/Goshanka/kr3-responsive-shop)

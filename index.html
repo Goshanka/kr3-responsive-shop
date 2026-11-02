@@ -12,10 +12,13 @@
     />
     <meta
       property="og:image"
-      content="https://username.github.io/kr1-html-css-shop/images/preview.jpg"
+      content="https://goshanka.github.io/kr3-responsive-shop/images/sofa-1.jpg"
     />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1f4d46" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/theme.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -25,6 +28,8 @@
         <a class="site-header__logo" href="index.html">ShopProject</a>
 
         <nav class="site-nav" aria-label="Основная навигация">
+          <input class="site-nav__checkbox" type="checkbox" id="nav-toggle" aria-label="Показать меню" />
+          <label class="site-nav__toggle" for="nav-toggle" aria-hidden="true"><span class="site-nav__burger"></span>Меню</label>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
@@ -39,16 +44,17 @@
               <a class="site-nav__link" href="contacts.html">Контакты</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
-            </li>
-            <li class="site-nav__item">
               <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+              <a class="site-nav__link" href="contacts.html#feedback">Обратная связь</a>
             </li>
           </ul>
         </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Включить тёмную тему">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
@@ -58,7 +64,7 @@
         <p>
           Диваны на любой вкус: классика, скандинавский стиль и современные модели. Подберите мебель для своего дома и оставьте заявку онлайн.
         </p>
-        <a class="button button--primary" href="#popular">Перейти к товарам</a>
+        <a class="button button--primary" href="catalog.html">Перейти к товарам</a>
       </section>
 
       <section class="section" id="popular">
