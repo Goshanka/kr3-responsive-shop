@@ -237,7 +237,14 @@ main {
 
   .site-nav__list {
     justify-content: flex-end;
+    gap: var(--space-xs);
     margin: 0;
+  }
+
+  .site-nav__link {
+    padding: var(--space-sm) 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   .theme-toggle {
