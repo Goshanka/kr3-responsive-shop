@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Учебный интернет-магазин</title>
+    <title>ShopProject — магазин диванов</title>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta property="og:title" content="ShopProject — магазин диванов" />
     <meta
       property="og:description"
-      content="Учебный frontend-проект интернет-магазина."
+      content="Интернет-магазин мягкой мебели: диваны на любой вкус."
     />
     <meta
       property="og:image"
       content="https://username.github.io/kr1-html-css-shop/images/preview.jpg"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
     <header class="site-header" id="top">
       <div class="site-header__inner">
         <a class="site-header__logo" href="index.html">ShopProject</a>
@@ -50,26 +52,13 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
-        <h1>Учебный интернет-магазин</h1>
+        <h1>ShopProject — магазин диванов</h1>
         <p>
-          Это стартовая страница учебного frontend-проекта. В дальнейшем на её
-          основе будет разработан многостраничный сайт интернет-магазина или
-          каталога услуг.
+          Диваны на любой вкус: классика, скандинавский стиль и современные модели. Подберите мебель для своего дома и оставьте заявку онлайн.
         </p>
         <a class="button button--primary" href="#popular">Перейти к товарам</a>
-      </section>
-
-      <section class="section" id="advantages">
-        <h2>Преимущества проекта</h2>
-
-        <ul class="advantages-list">
-          <li>понятная HTML-структура;</li>
-          <li>семантические блоки страницы;</li>
-          <li>подключение внешнего CSS-файла;</li>
-          <li>подготовка к разработке многостраничного сайта.</li>
-        </ul>
       </section>
 
       <section class="section" id="popular">
@@ -78,7 +67,10 @@
         <div class="products-grid">
           <article class="product-card">
             <span class="badge badge--hit">Хит</span>
-            <img class="product-card__image" src="images/sofa-1.jpg" alt="Диван Amelia" width="640" height="480" />
+            <img class="product-card__image" src="images/sofa-1.jpg"
+                srcset="images/sofa-1-320.jpg 320w, images/sofa-1-480.jpg 480w, images/sofa-1.jpg 640w"
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                alt="Диван Amelia" width="640" height="480" loading="lazy" />
             <h3 class="product-card__title">Диван Amelia</h3>
             <p class="product-card__description">Бежево-золотистый диван с бархатной обивкой и каретной стяжкой.</p>
             <p class="product-card__price">Цена: 89 990 руб.</p>
@@ -95,7 +87,10 @@
           </article>
 
           <article class="product-card">
-            <img class="product-card__image" src="images/sofa-2.jpg" alt="Диван Nordic" width="640" height="480" />
+            <img class="product-card__image" src="images/sofa-2.jpg"
+                srcset="images/sofa-2-320.jpg 320w, images/sofa-2-480.jpg 480w, images/sofa-2.jpg 640w"
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                alt="Диван Nordic" width="640" height="480" loading="lazy" />
             <h3 class="product-card__title">Диван Nordic</h3>
             <p class="product-card__description">Компактный диван в стиле ретро с синей бархатной обивкой.</p>
             <p class="product-card__price">Цена: 54 990 руб.</p>
@@ -112,7 +107,10 @@
           </article>
 
           <article class="product-card">
-            <img class="product-card__image" src="images/sofa-3.jpg" alt="Диван Chesterfield" width="640" height="480" />
+            <img class="product-card__image" src="images/sofa-3.jpg"
+                srcset="images/sofa-3-320.jpg 320w, images/sofa-3-480.jpg 480w, images/sofa-3.jpg 640w"
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                alt="Диван Chesterfield" width="640" height="480" loading="lazy" />
             <h3 class="product-card__title">Диван Chesterfield</h3>
             <p class="product-card__description">Классический диван Честерфилд из фиолетового бархата.</p>
             <p class="product-card__price">Цена: 72 500 руб.</p>
@@ -129,19 +127,37 @@
           </article>
         </div>
       </section>
-      <aside class="aside-info">
-        <h2>Информация для студентов</h2>
-        <p>
-          На следующих практических занятиях этот проект будет расширяться:
-          появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-          БЭМ-структура и адаптивная версия сайта.
-        </p>
-      </aside>
+
+      <section class="section" id="advantages">
+        <h2>Почему выбирают нас</h2>
+
+        <div class="advantages-list">
+          <article class="advantage">
+            <span class="advantage__num" aria-hidden="true">1</span>
+            <h3 class="advantage__title">Бесплатная доставка</h3>
+            <p class="advantage__text">По городу привезём и занесём диван в удобное для вас время.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage__num" aria-hidden="true">2</span>
+            <h3 class="advantage__title">Гарантия 12 месяцев</h3>
+            <p class="advantage__text">На каркас и механизмы всех моделей из каталога.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage__num" aria-hidden="true">3</span>
+            <h3 class="advantage__title">Прочные ткани</h3>
+            <p class="advantage__text">Бархат и другие износостойкие обивки, приятные на ощупь.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage__num" aria-hidden="true">4</span>
+            <h3 class="advantage__title">Сборка в подарок</h3>
+            <p class="advantage__text">Соберём мебель на месте и поможем с подъёмом на этаж.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" id="contacts">
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+      <p>&copy; 2026 ShopProject. Все права защищены.</p>
     </footer>
     <dialog
       class="order-dialog"
