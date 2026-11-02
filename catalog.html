@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Каталог товаров учебного интернет-магазина."
+    />
+    <title>Каталог товаров — Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta
+      property="og:description"
+      content="Учебный frontend-проект интернет-магазина."
+    />
+    <meta
+      property="og:image"
+      content="https://username.github.io/kr1-html-css-shop/images/preview.jpg"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">ShopProject</a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Оформить заявку</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <span class="breadcrumbs__current">Каталог</span>
+      </nav>
+
+      <section class="catalog-layout">
+        <aside class="catalog-filters">
+          <h2>Фильтры</h2>
+
+          <form class="catalog-filters__form" action="#" method="get">
+            <fieldset class="catalog-filters__group">
+              <legend class="catalog-filters__legend">Категория</legend>
+
+              <label class="catalog-filters__label">
+                <input type="checkbox" name="category" value="all" />
+                Все товары
+              </label>
+
+              <label class="catalog-filters__label">
+                <input type="checkbox" name="category" value="popular" />
+                Популярные
+              </label>
+
+              <label class="catalog-filters__label">
+                <input type="checkbox" name="category" value="new" />
+                Новинки
+              </label>
+            </fieldset>
+
+            <fieldset class="catalog-filters__group">
+              <legend class="catalog-filters__legend">Цена</legend>
+
+              <label class="catalog-filters__label" for="price-from">От</label>
+              <input
+                class="catalog-filters__input"
+                id="price-from"
+                name="price-from"
+                type="number"
+                min="0"
+                placeholder="0"
+              />
+
+              <label class="catalog-filters__label" for="price-to">До</label>
+              <input
+                class="catalog-filters__input"
+                id="price-to"
+                name="price-to"
+                type="number"
+                min="0"
+                placeholder="5000"
+              />
+            </fieldset>
+
+            <button class="button button--primary" type="submit">Применить</button>
+          </form>
+        </aside>
+
+        <section class="catalog-products">
+          <h2>Список товаров</h2>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <span class="badge badge--hit">Хит</span>
+              <img class="product-card__image" src="images/sofa-1.jpg" alt="Диван Amelia" width="640" height="480" />
+              <h3 class="product-card__title">Диван Amelia</h3>
+              <p class="product-card__description">Бежево-золотистый диван с бархатной обивкой и каретной стяжкой.</p>
+              <p class="product-card__price">Цена: 89 990 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </article>
+
+            <article class="product-card">
+              <img class="product-card__image" src="images/sofa-2.jpg" alt="Диван Nordic" width="640" height="480" />
+              <h3 class="product-card__title">Диван Nordic</h3>
+              <p class="product-card__description">Компактный диван в стиле ретро с синей бархатной обивкой.</p>
+              <p class="product-card__price">Цена: 54 990 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </article>
+
+            <article class="product-card">
+              <img class="product-card__image" src="images/sofa-3.jpg" alt="Диван Chesterfield" width="640" height="480" />
+              <h3 class="product-card__title">Диван Chesterfield</h3>
+              <p class="product-card__description">Классический диван Честерфилд из фиолетового бархата.</p>
+              <p class="product-card__price">Цена: 72 500 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </article>
+
+            <article class="product-card">
+              <img class="product-card__image" src="images/sofa-4.jpg" alt="Диван Cozy" width="640" height="480" />
+              <h3 class="product-card__title">Диван Cozy</h3>
+              <p class="product-card__description">Диван серого цвета с мягкими узорными подушками для уютной гостиной.</p>
+              <p class="product-card__price">Цена: 61 900 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </article>
+
+            <article class="product-card">
+              <img class="product-card__image" src="images/sofa-5.jpg" alt="Диван Scandi" width="640" height="480" />
+              <h3 class="product-card__title">Диван Scandi</h3>
+              <p class="product-card__description">Светлый диван в скандинавском стиле с лаконичным дизайном.</p>
+              <p class="product-card__price">Цена: 47 300 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+
+    <a class="back-to-top" href="#top" aria-label="Наверх">&uarr;</a>
+  </body>
+</html>

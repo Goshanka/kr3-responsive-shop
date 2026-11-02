@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Карточка товара учебного интернет-магазина: описание, характеристики и цена."
+    />
+    <title>Диван Amelia — Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta
+      property="og:description"
+      content="Учебный frontend-проект интернет-магазина."
+    />
+    <meta
+      property="og:image"
+      content="https://username.github.io/kr1-html-css-shop/images/preview.jpg"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">ShopProject</a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Оформить заявку</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+        <span class="breadcrumbs__current">Диван Amelia</span>
+      </nav>
+
+      <section class="section">
+        <article class="product-detail">
+          <img
+            class="product-detail__image"
+            src="images/sofa-1.jpg"
+            alt="Диван Amelia"
+            width="640"
+            height="480"
+          />
+
+          <div class="product-detail__info">
+            <h1 class="product-detail__title">Диван Amelia</h1>
+            <p class="product-detail__description">
+              Бежево-золотистый диван с бархатной обивкой и каретной стяжкой.
+              Мягкие подушки и металлические вставки подчёркивают
+              эффектный, статусный вид модели.
+            </p>
+            <p class="product-detail__price">Цена: 89 990 руб.</p>
+            <a class="button button--primary product-detail__button" href="order.html">
+              Оформить заявку
+            </a>
+          </div>
+        </article>
+
+        <table class="product-specs">
+          <caption>Характеристики товара</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Диваны</td>
+            </tr>
+            <tr>
+              <th scope="row">Обивка</th>
+              <td>Бархат</td>
+            </tr>
+            <tr>
+              <th scope="row">Артикул</th>
+              <td>SKU-001</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Гарантия</th>
+              <td>12 месяцев</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+
+    <a class="back-to-top" href="#top" aria-label="Наверх">&uarr;</a>
+  </body>
+</html>
